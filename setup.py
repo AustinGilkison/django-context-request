@@ -10,7 +10,7 @@ from shutil import rmtree
 from setuptools import setup, Command, find_packages
 
 # Package meta-data.
-NAME = 'django-request-context'
+NAME = 'django_context_request'
 DESCRIPTION = 'Django middleware which provide request and g object' \
               'all of which are accessible everywhere, and thread isolation, just like used in flask.'
 URL = 'https://github.com/AustinGilkison/django-context-request'
@@ -37,7 +37,7 @@ except FileNotFoundError:
 
 about = {}
 if not VERSION:
-    with open(os.path.join(here, 'django_request_context', '__version__.py')) as f:
+    with open(os.path.join(here, 'django_context_request', '__version__.py')) as f:
         exec(f.read(), about)
 else:
     about['__version__'] = VERSION
