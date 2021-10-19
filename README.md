@@ -15,11 +15,11 @@ pip install django-context-request
   1. Add RequestContextMiddleware to MIDDLEWARE in settings.py
   
  ```
- import django_request_context
+ import django_context_request
  
  MIDDLEWARE = [
     ...
-    'django_request_context.RequestContextMiddleware',
+    'django_context_request.RequestContextMiddleware',
     ...
     ] 
  ``` 
@@ -27,7 +27,7 @@ pip install django-context-request
   2. You can get request and g objects anywhere in the project throughout the life cycle of the request.
   just import:
 ```
-from django_request_context import request, g
+from django_context_request import request, g
 ```
 
  
